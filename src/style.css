@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800;900&display=swap');
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main */
+
+:root {
+  --bg-color: #F0F0F0;
+  --main-color: #FF7978;
+  --secondary-color: #5D54A3;
+  --accent-color: #37CC8A;
+}
+
+body {
+  background-color: var(--bg-color);
+  width: 100vw;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  right: 5%;
+  padding: 0em 5em;
+  gap: 3em;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.left h1 {
+  font-size: 2rem;
+  line-height: 1.25em;
+  margin-bottom: 0.25em;
+}
+
+.left p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.25em;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4em 0em;
+}
+
+.ad {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 1em 2em;
+  text-align: center;
+  font-size: 0.7rem;
+  width: 100%;
+  border: none;
+  box-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,0.4);
+  cursor: pointer;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+  font-weight: 300;
+}
+
+.ad span {
+  font-weight: 600;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 2em;
+  border: none;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-container input {
+  padding: 0.5em 1em;
+  width: 100%;
+  margin-bottom: 1em;
+  border: 0.1em solid darkgrey;
+}
+
+.error {
+  display: none;
+  color: var(--main-color);
+  font-size: 0.6rem;
+  text-align: right;
+  margin-top: -1em;
+  margin-bottom: 1em;
+}
+
+.submit {
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: 600;
+  padding: 0.8em 0em;
+  width: 100%;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  margin-bottom: 1em;
+}
+
+.submit:hover {
+  opacity: 0.8;
+}
+
+.form-container p {
+  color: grey;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.form-container p span {
+  color:var(--main-color);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 700px) {
+  .main-container {
+    flex-direction: column;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 1em 0em 1em;
+    gap: 0;
+  }
+  .left {
+    margin-bottom: -2em;
+  }
+}
